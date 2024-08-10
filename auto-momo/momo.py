@@ -1,3 +1,4 @@
+
 # encoding:utf-8
 from os import environ
 from ip import listIP, getheaders, ip_main
@@ -5,7 +6,7 @@ from asyncio import create_task, wait, Semaphore, run
 from aiohttp import ClientSession, ClientTimeout
 
 global n  # 记录访问成功次数
-link = 'link'  # 设置link
+link = 'https://www.maimemo.com/share/page?uid=26637318&pid=8b971277aaacb8903adfa9aaef9a3210&tid=52f89be8ddbd320a567b92e29ccc8250'  # 设置link
 
 # 如果检测到程序在 github actions 内运行，那么读取环境变量中的登录信息
 # if environ.get('GITHUB_RUN_ID', None):
@@ -50,3 +51,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+    
